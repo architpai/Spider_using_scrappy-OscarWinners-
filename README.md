@@ -7,7 +7,10 @@ we will use Wikipedia as our website as it contains all the information we need 
 Data scraping involves increasing the server load for the site that you’re scraping, which means a higher cost for the companies hosting the site and a lower quality experience for other users of that site. The quality of the server that is running the website, the amount of data you’re trying to obtain, and the rate at which you’re sending requests to the server will moderate the effect you have on the server. 
 Most sites also have a file called robots.txt in their main directory. This file sets out rules for what directories sites do not want scrapers to access. A website’s Terms & Conditions page will usually let you know what their policy on data scraping is.Disobeying a websites policy may result in site wide IP ban or other similar actions by the website to protect themseleves.
 ## The Setup:
-Any good scrape job start with inspecting the website to be scraped and gather some metainformation about it like how the site is structed and whether data to be extarcted can be easily accessed using classes or id , or a rather rudimentary upproach might me required
+Any good scrape job start with inspecting the website to be scraped and gather some metainformation about it like how the site is structed and whether data to be extarcted can be easily accessed using classes or id , or a rather rudimentary upproach might be required.I prefer to use the inbuilt ChromeDevTools 
+for example o the wikipedia site all oscar winning movies have yellow color like so:
+
+![](https://github.com/architpai/Spider_using_scrappy-OscarWinners-/blob/main/Screenshots/1.png)
  
 Inside the spider is a class that you define that tells Scrapy what to do.
 ```
